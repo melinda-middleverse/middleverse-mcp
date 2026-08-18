@@ -1,0 +1,50 @@
+name: middleverse-directory
+displayName: MiddleVerse Business Directory
+version: 1.0.0
+description: >
+  MiddleVerse AI-native business directory. Search local businesses by
+  category and location, get full details and hours, check booking
+  availability, and create real bookings on behalf of users.
+homepage: https://middleverse.ai
+docs: https://middleverse.ai/api-docs
+license: Proprietary
+author:
+  name: MiddleVerse
+  url: https://middleverse.ai
+  email: support@middleverse.ai
+categories:
+  - business
+  - search
+  - booking
+  - local
+tags:
+  - business-directory
+  - local-search
+  - booking
+  - appointments
+  - small-business
+transport: http
+endpoint: https://middleverse.ai/mcp
+auth:
+  type: none
+config: {}
+tools:
+  - name: search_businesses
+    description: Search the MiddleVerse directory by category, location, or keywords.
+  - name: get_business
+    description: Get full details for a business by slug or name.
+  - name: get_directory_stats
+    description: Directory statistics — totals, categories, coverage.
+  - name: check_availability
+    description: Check booking availability and method for a business.
+  - name: book_business
+    description: Create a real booking on behalf of a user.
+  - name: find_by_category_location
+    description: Natural-language category + location lookup.
+examples:
+  - prompt: Find me a plumber in Cle Elum, WA
+    tool: find_by_category_location
+  - prompt: Book a haircut tomorrow at 2pm at Joe's Barber in Leavenworth
+    tool: book_business
+  - prompt: How many businesses are in the MiddleVerse directory?
+    tool: get_directory_stats
