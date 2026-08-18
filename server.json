@@ -1,0 +1,13 @@
+{
+  "auth": "none",
+  "description": "MiddleVerse AI-native business directory — find, explore, and book local businesses. Search by category and location, get full business details, check availability, and create real bookings on behalf of users.",
+  "display_name": "MiddleVerse Business Directory",
+  "docs_url": "https://middleverse.ai/api-docs",
+  "endpoint": "https://middleverse.ai/mcp",
+  "homepage": "https://middleverse.ai",
+  "name": "middleverse-directory",
+  "protocol": "model-context-protocol",
+  "protocol_version": "2024-11-05",
+  "transport": "http",
+  "version": "1.0.0"
+}
